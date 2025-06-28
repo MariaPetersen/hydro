@@ -63,7 +63,7 @@
     <div class="status {{ 'allumé' if pump_status == 'ON' else 'éteint' }}">
         <p>Statut de la Pompe : {{ pump_status }}</p>
         <p>Statut de la boucle : {{ 'En cours' if loop_running else 'Arrêté' }}</p>
-        <p>Décompte jusqu'à l'arrêt : {{ count_down_stop }}s</p>
+        <p>Décompte jusqu'à l'arrêt (test) : {{ count_down_stop }}s</p>
         <p>Décompte jusqu'au démarrage : {{ count_down_start }}s</p>
     </div>
 
