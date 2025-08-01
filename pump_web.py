@@ -1,7 +1,7 @@
 import RPi.GPIO as GPIO
 import threading
 import atexit
-import pump.state as state
+import state as state
 from flask import Flask, render_template, redirect, url_for, request
 
 from pump import pump_loop, PUMP_PIN
