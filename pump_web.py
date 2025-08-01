@@ -1,7 +1,7 @@
 import RPi.GPIO as GPIO
 import threading
 import atexit
-import state
+import pump.state as state
 from flask import Flask, render_template, redirect, url_for, request
 
 from pump import pump_loop, PUMP_PIN
@@ -77,4 +77,4 @@ def stop_loop():
     return redirect(url_for("index"))
 
 if __name__ == "__main__":
-    app.run(host="0.0.0.0", port=5001)
+    app.run(host="0.0.0.0", port=5000)

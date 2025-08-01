@@ -23,7 +23,7 @@ RUN pip install --no-cache-dir -r requirements.txt
 ENV FLASK_APP=pump_web.py
 
 # Expose the Flask port
-EXPOSE 5001
+EXPOSE 5000
 
 # Run the app
 CMD ["python", "pump_web.py"]
